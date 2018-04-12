@@ -43,6 +43,10 @@
 #define INS_PER_DELAY_LOOP 2	 // two instructions per delay loop
 #define DELAY_CYCLES_US (INS_PER_US / INS_PER_DELAY_LOOP)
 
+#define CARRIER_PERIOD = (5264)
+#define CARRIER_PULSE_WIDTH (2632)  // 38kHz = 26.32us * 200 cycles/us = 5264 cycles / signal period. signal is on for half of period -> /2
+#define CARRIER_PULSE_US (26.32)
+
 #define GPIO1 0x4804C000
 #define GPIO_CLEARDATAOUT 0x190
 #define GPIO_SETDATAOUT 0x194
@@ -68,45 +72,129 @@ volatile register unsigned int __R31;
 
 const int decay = DECAY_RATE;
 
+#define LED_DISABLE 1
+
+
+void mark(unsigned pulses){
+	//for now this just makes one pulse
+	while(pulses > 0){
+		__R30 |= PRU0_GPIO;
+		__delay_cycles(CARRIER_PULSE_WIDTH);
+		__R30 ^= PRU0_GPIO;
+		__delay_cycles(CARRIER_PULSE_WIDTH);
+		pulses--;
+	}
+	
+}
+
+void space(unsigned pulses){
+	__R30 &= ~PRU0_GPIO;
+	while(pulses > 0){
+		__delay_cycles(CARRIER_PULSE_WIDTH);
+		__delay_cycles(CARRIER_PULSE_WIDTH);
+		pulses--;
+	}
+}
+
+
+void putBits(unsigned data, unsigned char nbits){
+	unsigned char i;
+	for (i = 0; i < nbits; i++) {
+		//mark always 600us
+        if (data & 0x8000) {//always 16 bits
+        	//1 is space for 1600
+          mark(23);  space(61);
+        } else {
+        	//0 is space for 460
+          mark(23 ); space(17);
+        };
+        data <<= 1;
+     }
+}
+
 void main(void) {
 	
-	int i, j;
+	// int i, j;
 
 	/* Clear SYSCFG[STANDBY_INIT] to enable OCP master port */
 	
 	/*
+	
 	 unsigned int loops, delay;
     for (loops = 0; loops < 10; loops++) {
-        __R30 = __R30 | (1 << 15); // Turn on the LED
-        __R30 = __R30 | 1; 
+     //   __R30 = __R30 | (1 << 15); // Turn on the LED
+        __R30 = __R30 | PRU0_GPIO; 
         for (delay = 0; delay < 20000000; delay++) { // loop delay
         }
-        __R30 = __R30 & ~(1 << 15); // Turn off the LED
-        __R30 - __R30 & ~1;
+        __R30 = __R30 ^= PRU0_GPIO; // Turn off the LED
+       // __R30 - __R30 & ~1;
         __delay_cycles(60000000); // Intrinsic method delay
     }
-	*/
+    */
+    
+    
+    /*
+    __R30 = __R30 |= PRU0_GPIO;
+    __delay_cycles(200000000);
+    __R30 = __R30 ^= PRU0_GPIO;
+    __delay_cycles(200000000);
+    __R30 = __R30 |= PRU0_GPIO;
+    __delay_cycles(200000000);
+    __R30 = __R30 ^= PRU0_GPIO;
+    */
+    
+    //011*****10*****0
+    
+    __R30 &= ~PRU0_GPIO;
+    
+    while(1){
+    	mark(171);
+    	space(171);
+    	putBits(0x00006b96, 16);
+    	__delay_cycles(200000000);
+    }
+    
+    
 	
 	
-	CT_CFG.SYSCFG_bit.STANDBY_INIT = 0;
+	
+	//CT_CFG.SYSCFG_bit.STANDBY_INIT = 0;
+
+/*
 
 	for(i = 1000000; i > 0; i = (i * decay) / 100) {
-#ifndef LED_DISABLE
-		*GPIO1_SET = USR0;
-#endif
-#ifndef GPIO_DISABLE
-		__R30 |= PRU0_GPIO;
-#endif
-		for(j=0;j<i;j++){ __delay_cycles(2 * DELAY_CYCLES); }
-#ifndef LED_DISABLE
-		*GPIO1_CLEAR = USR0;
-#endif
-#ifndef GPIO_DISABLE
-		__R30 ^= PRU0_GPIO;
-#endif
-		for(j=0;j<i;j++){ __delay_cycles(DELAY_CYCLES); }
+		
+		#ifndef LED_DISABLE
+				*GPIO1_SET = USR0;
+		#endif
+		#ifndef GPIO_DISABLE
+				__R30 |= PRU0_GPIO;
+		#endif
+		for(j=0;j<i;j++){
+			__delay_cycles( DELAY_CYCLES); 
+		}
+		#ifndef LED_DISABLE
+				*GPIO1_CLEAR = USR0;
+		#endif
+		#ifndef GPIO_DISABLE
+				__R30 ^= PRU0_GPIO;
+		#endif
+		for(j=0;j<i;j++){
+			__delay_cycles(DELAY_CYCLES);
+		}
 	}
+	*/
+	
+/*
 
-
+	unsigned int loops, delay;
+    for (loops = 0; loops < 10; loops++) {
+        __R30 |= PRU0_GPIO; 
+        for (delay = 0; delay < 20000000; delay++) { // loop delay
+        }
+        __R30 ^= PRU0_GPIO; // Turn off the LED
+        __delay_cycles(60000000); // Intrinsic method delay
+    }
+*/
 	__halt();
 }
