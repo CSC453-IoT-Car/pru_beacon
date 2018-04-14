@@ -1,11 +1,11 @@
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE    1
 
        1;******************************************************************************
        2;* PRU C/C++ Codegen                                              Unix v2.1.4 *
-       3;* Date/Time created: Thu Apr 12 07:14:39 2018                                *
+       3;* Date/Time created: Fri Apr 13 06:43:45 2018                                *
        4;******************************************************************************
        5        .compiler_opts --abi=eabi --endian=little --hll_source=on --object_format=elf --silicon_versio
        6
@@ -58,7 +58,7 @@ hello-pru.asm                                                        PAGE    1
       53        .dwattr $C$DW$5, DW_AT_external
       54        .dwattr $C$DW$5, DW_AT_decl_file("resource_table_empty.h")
       55        .dwattr $C$DW$5, DW_AT_decl_line(0x40)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE    2
@@ -109,8 +109,8 @@ hello-pru.asm                                                        PAGE    2
       99        .dwattr $C$DW$8, DW_AT_decl_file("hello-pru.c")
      100        .dwattr $C$DW$8, DW_AT_decl_line(0x49)
      101        .dwattr $C$DW$8, DW_AT_decl_column(0x0b)
-     102;       optpru /tmp/03442S1WBjX /tmp/03442Y5rOpK 
-     103;       acpiapru -@/tmp/03442bjuCbw 
+     102;       optpru /tmp/02287aeNZUu /tmp/02287iOu4zP 
+     103;       acpiapru -@/tmp/02287a1VvJu 
      104 00000000                         .sect   ".text:space"
      105        .clink
      106        .global ||space||
@@ -118,7 +118,7 @@ hello-pru.asm                                                        PAGE    2
      108$C$DW$9 .dwtag  DW_TAG_subprogram, DW_AT_name("space")
      109        .dwattr $C$DW$9, DW_AT_low_pc(||space||)
      110        .dwattr $C$DW$9, DW_AT_high_pc(0x00)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE    3
@@ -178,7 +178,7 @@ hello-pru.asm                                                        PAGE    3
      163;*   Known Minimum Trip Count        : 1
      164;*   Known Maximum Trip Count        : 2147483647
      165;*   Known Max Trip Count Factor     : 1
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE    4
@@ -238,7 +238,7 @@ hello-pru.asm                                                        PAGE    4
      218        .dwfde $C$DW$CIE, ||mark||
      219$C$DW$14        .dwtag  DW_TAG_formal_parameter, DW_AT_name("pulses")
      220        .dwattr $C$DW$14, DW_AT_TI_symbol_name("pulses")
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE    5
@@ -298,7 +298,7 @@ hello-pru.asm                                                        PAGE    5
      273        .dwpsn  file "hello-pru.c",line 83,column 3,is_stmt,isa 0
      274;----------------------------------------------------------------------
      275;  83 | __R30 ^= PRU0_GPIO;                                                    
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE    6
@@ -358,7 +358,7 @@ hello-pru.asm                                                        PAGE    6
      328        .dwattr $C$DW$19, DW_AT_location[DW_OP_regx 0x3c]
      329
      330;***************************************************************
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE    7
@@ -418,7 +418,7 @@ hello-pru.asm                                                        PAGE    7
      383; 108 |         //0 is space for 460                                           
      384;----------------------------------------------------------------------
      385 0000000c 000000D10FF005          QBBS      ||$C$L6||, r16, 0x0f  ; [ALU_PRU] |104| data
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE    8
@@ -478,7 +478,7 @@ hello-pru.asm                                                        PAGE    8
      438        .dwattr $C$DW$17, DW_AT_TI_end_column(0x01)
      439        .dwendentry
      440        .dwendtag $C$DW$17
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE    9
@@ -538,7 +538,7 @@ hello-pru.asm                                                        PAGE    9
      493;* --------------------------------------------------------------------------*
      494 00000004                 ||$C$L9||:    
      495        .dwpsn  file "hello-pru.c",line 151,column 6,is_stmt,isa 0
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   10
@@ -598,7 +598,7 @@ hello-pru.asm                                                        PAGE   10
      548;******************************************************************************
      549
      550$C$DW$T$19      .dwtag  DW_TAG_structure_type
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   11
@@ -658,7 +658,7 @@ hello-pru.asm                                                        PAGE   11
      603        .dwattr $C$DW$34, DW_AT_type(*$C$DW$T$11)
      604        .dwattr $C$DW$34, DW_AT_name("SUB_MWAIT")
      605        .dwattr $C$DW$34, DW_AT_TI_symbol_name("SUB_MWAIT")
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   12
@@ -718,7 +718,7 @@ hello-pru.asm                                                        PAGE   12
      658        .dwattr $C$DW$38, DW_AT_accessibility(DW_ACCESS_public)
      659        .dwattr $C$DW$38, DW_AT_decl_file("/usr/lib/ti/pru-software-support-package/include/am335x/pru
      660        .dwattr $C$DW$38, DW_AT_decl_line(0x47)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   13
@@ -778,7 +778,7 @@ hello-pru.asm                                                        PAGE   13
      713        .dwattr $C$DW$44, DW_AT_type(*$C$DW$T$11)
      714        .dwattr $C$DW$44, DW_AT_name("PRU0_GPO_SH_SEL")
      715        .dwattr $C$DW$44, DW_AT_TI_symbol_name("PRU0_GPO_SH_SEL")
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   14
@@ -838,7 +838,7 @@ hello-pru.asm                                                        PAGE   14
      768        .dwattr $C$DW$48, DW_AT_accessibility(DW_ACCESS_public)
      769        .dwattr $C$DW$48, DW_AT_decl_file("/usr/lib/ti/pru-software-support-package/include/am335x/pru
      770        .dwattr $C$DW$48, DW_AT_decl_line(0x5a)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   15
@@ -898,7 +898,7 @@ hello-pru.asm                                                        PAGE   15
      823        .dwattr $C$DW$54, DW_AT_type(*$C$DW$T$11)
      824        .dwattr $C$DW$54, DW_AT_name("PRU1_GPO_SH_SEL")
      825        .dwattr $C$DW$54, DW_AT_TI_symbol_name("PRU1_GPO_SH_SEL")
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   16
@@ -958,7 +958,7 @@ hello-pru.asm                                                        PAGE   16
      878        .dwattr $C$DW$58, DW_AT_accessibility(DW_ACCESS_public)
      879        .dwattr $C$DW$58, DW_AT_decl_file("/usr/lib/ti/pru-software-support-package/include/am335x/pru
      880        .dwattr $C$DW$58, DW_AT_decl_line(0x6d)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   17
@@ -1018,7 +1018,7 @@ hello-pru.asm                                                        PAGE   17
      933        .dwattr $C$DW$64, DW_AT_type(*$C$DW$T$11)
      934        .dwattr $C$DW$64, DW_AT_name("INTC_CLK_EN")
      935        .dwattr $C$DW$64, DW_AT_TI_symbol_name("INTC_CLK_EN")
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   18
@@ -1078,7 +1078,7 @@ hello-pru.asm                                                        PAGE   18
      988        .dwattr $C$DW$69, DW_AT_accessibility(DW_ACCESS_public)
      989        .dwattr $C$DW$69, DW_AT_decl_file("/usr/lib/ti/pru-software-support-package/include/am335x/pru
      990        .dwattr $C$DW$69, DW_AT_decl_line(0x78)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   19
@@ -1138,7 +1138,7 @@ hello-pru.asm                                                        PAGE   19
     1043
     1044        .dwattr $C$DW$T$23, DW_AT_decl_file("/usr/lib/ti/pru-software-support-package/include/am335x/p
     1045        .dwattr $C$DW$T$23, DW_AT_decl_line(0x6a)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   20
@@ -1198,7 +1198,7 @@ hello-pru.asm                                                        PAGE   20
     1098        .dwattr $C$DW$79, DW_AT_accessibility(DW_ACCESS_public)
     1099        .dwattr $C$DW$79, DW_AT_decl_file("/usr/lib/ti/pru-software-support-package/include/am335x/pru
     1100        .dwattr $C$DW$79, DW_AT_decl_line(0x8b)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   21
@@ -1258,7 +1258,7 @@ hello-pru.asm                                                        PAGE   21
     1153        .dwattr $C$DW$84, DW_AT_type(*$C$DW$T$11)
     1154        .dwattr $C$DW$84, DW_AT_name("PRU1_DMEM_PE")
     1155        .dwattr $C$DW$84, DW_AT_TI_symbol_name("PRU1_DMEM_PE")
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   22
@@ -1318,7 +1318,7 @@ hello-pru.asm                                                        PAGE   22
     1208        .dwattr $C$DW$88, DW_AT_accessibility(DW_ACCESS_public)
     1209        .dwattr $C$DW$88, DW_AT_decl_file("/usr/lib/ti/pru-software-support-package/include/am335x/pru
     1210        .dwattr $C$DW$88, DW_AT_decl_line(0xa5)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   23
@@ -1378,7 +1378,7 @@ hello-pru.asm                                                        PAGE   23
     1263        .dwattr $C$DW$93, DW_AT_type(*$C$DW$T$11)
     1264        .dwattr $C$DW$93, DW_AT_name("PRU0_IMEM_PE_CLR")
     1265        .dwattr $C$DW$93, DW_AT_TI_symbol_name("PRU0_IMEM_PE_CLR")
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   24
@@ -1438,7 +1438,7 @@ hello-pru.asm                                                        PAGE   24
     1318        .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$27)
     1319
     1320$C$DW$T$28      .dwtag  DW_TAG_structure_type
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   25
@@ -1498,7 +1498,7 @@ hello-pru.asm                                                        PAGE   25
     1373        .dwattr $C$DW$102, DW_AT_type(*$C$DW$T$11)
     1374        .dwattr $C$DW$102, DW_AT_name("rsvd1")
     1375        .dwattr $C$DW$102, DW_AT_TI_symbol_name("rsvd1")
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   26
@@ -1558,7 +1558,7 @@ hello-pru.asm                                                        PAGE   26
     1428        .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$30)
     1429
     1430$C$DW$T$31      .dwtag  DW_TAG_structure_type
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   27
@@ -1618,7 +1618,7 @@ hello-pru.asm                                                        PAGE   27
     1483        .dwattr $C$DW$110, DW_AT_TI_symbol_name("$P$T2")
     1484        .dwattr $C$DW$110, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
     1485        .dwattr $C$DW$110, DW_AT_accessibility(DW_ACCESS_public)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   28
@@ -1678,7 +1678,7 @@ hello-pru.asm                                                        PAGE   28
     1538        .dwattr $C$DW$116, DW_AT_data_member_location[DW_OP_plus_uconst 0x20]
     1539        .dwattr $C$DW$116, DW_AT_accessibility(DW_ACCESS_public)
     1540        .dwattr $C$DW$116, DW_AT_decl_file("/usr/lib/ti/pru-software-support-package/include/am335x/pr
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   29
@@ -1738,7 +1738,7 @@ hello-pru.asm                                                        PAGE   29
     1593        .dwattr $C$DW$122, DW_AT_accessibility(DW_ACCESS_public)
     1594        .dwattr $C$DW$122, DW_AT_decl_file("/usr/lib/ti/pru-software-support-package/include/am335x/pr
     1595        .dwattr $C$DW$122, DW_AT_decl_line(0xe5)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   30
@@ -1798,7 +1798,7 @@ hello-pru.asm                                                        PAGE   30
     1648$C$DW$126       .dwtag  DW_TAG_member
     1649        .dwattr $C$DW$126, DW_AT_type(*$C$DW$T$36)
     1650        .dwattr $C$DW$126, DW_AT_name("SYSCFG")
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   31
@@ -1858,7 +1858,7 @@ hello-pru.asm                                                        PAGE   31
     1703        .dwattr $C$DW$130, DW_AT_TI_symbol_name("GPCFG1")
     1704        .dwattr $C$DW$130, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     1705        .dwattr $C$DW$130, DW_AT_accessibility(DW_ACCESS_public)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   32
@@ -1918,7 +1918,7 @@ hello-pru.asm                                                        PAGE   32
     1758        .dwattr $C$DW$134, DW_AT_decl_file("/usr/lib/ti/pru-software-support-package/include/am335x/pr
     1759        .dwattr $C$DW$134, DW_AT_decl_line(0x84)
     1760        .dwattr $C$DW$134, DW_AT_decl_column(0x15)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   33
@@ -1978,7 +1978,7 @@ hello-pru.asm                                                        PAGE   33
     1813$C$DW$139       .dwtag  DW_TAG_member
     1814        .dwattr $C$DW$139, DW_AT_type(*$C$DW$T$51)
     1815        .dwattr $C$DW$139, DW_AT_name("IESP_bit")
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   34
@@ -2038,7 +2038,7 @@ hello-pru.asm                                                        PAGE   34
     1868        .dwattr $C$DW$143, DW_AT_TI_symbol_name("PMAO_bit")
     1869        .dwattr $C$DW$143, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
     1870        .dwattr $C$DW$143, DW_AT_accessibility(DW_ACCESS_public)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   35
@@ -2098,7 +2098,7 @@ hello-pru.asm                                                        PAGE   35
     1923        .dwattr $C$DW$147, DW_AT_decl_file("/usr/lib/ti/pru-software-support-package/include/am335x/pr
     1924        .dwattr $C$DW$147, DW_AT_decl_line(0xe1)
     1925        .dwattr $C$DW$147, DW_AT_decl_column(0x05)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   36
@@ -2158,7 +2158,7 @@ hello-pru.asm                                                        PAGE   36
     1978        .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
     1979        .dwattr $C$DW$T$8, DW_AT_name("short")
     1980        .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   37
@@ -2218,7 +2218,7 @@ hello-pru.asm                                                        PAGE   37
     2033        .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
     2034        .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
     2035        .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   38
@@ -2278,7 +2278,7 @@ hello-pru.asm                                                        PAGE   38
     2088        .dwattr $C$DW$154, DW_AT_type(*$C$DW$T$32)
     2089        .dwattr $C$DW$154, DW_AT_name("ver")
     2090        .dwattr $C$DW$154, DW_AT_TI_symbol_name("ver")
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   39
@@ -2338,7 +2338,7 @@ hello-pru.asm                                                        PAGE   39
     2143        .dwcfi  undefined, 15
     2144        .dwcfi  same_value, 16
     2145        .dwcfi  same_value, 17
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   40
@@ -2398,7 +2398,7 @@ hello-pru.asm                                                        PAGE   40
     2198        .dwcfi  undefined, 70
     2199        .dwcfi  undefined, 71
     2200        .dwcfi  undefined, 72
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   41
@@ -2458,7 +2458,7 @@ hello-pru.asm                                                        PAGE   41
     2253        .dwcfi  undefined, 125
     2254        .dwcfi  undefined, 126
     2255        .dwcfi  undefined, 127
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   42
@@ -2518,7 +2518,7 @@ hello-pru.asm                                                        PAGE   42
     2308        .dwattr $C$DW$176, DW_AT_location[DW_OP_reg19]
     2309$C$DW$177       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R5_b0")
     2310        .dwattr $C$DW$177, DW_AT_location[DW_OP_reg20]
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   43
@@ -2578,7 +2578,7 @@ hello-pru.asm                                                        PAGE   43
     2363$C$DW$204       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R11_b3")
     2364        .dwattr $C$DW$204, DW_AT_location[DW_OP_regx 0x2f]
     2365$C$DW$205       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R12_b0")
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   44
@@ -2638,7 +2638,7 @@ hello-pru.asm                                                        PAGE   44
     2418        .dwattr $C$DW$231, DW_AT_location[DW_OP_regx 0x4a]
     2419$C$DW$232       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R18_b3")
     2420        .dwattr $C$DW$232, DW_AT_location[DW_OP_regx 0x4b]
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   45
@@ -2698,7 +2698,7 @@ hello-pru.asm                                                        PAGE   45
     2473$C$DW$259       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R25_b2")
     2474        .dwattr $C$DW$259, DW_AT_location[DW_OP_regx 0x66]
     2475$C$DW$260       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("R25_b3")
-PRU Assembler Unix v2.1.4 Thu Apr 12 07:14:39 2018
+PRU Assembler Unix v2.1.4 Fri Apr 13 06:43:45 2018
 
 Tools Copyright (c) 2012-2015 Texas Instruments Incorporated
 hello-pru.asm                                                        PAGE   46

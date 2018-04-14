@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* PRU C/C++ Codegen                                              Unix v2.1.4 *
-;* Date/Time created: Thu Apr 12 07:14:39 2018                                *
+;* Date/Time created: Fri Apr 13 06:43:45 2018                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --endian=little --hll_source=on --object_format=elf --silicon_version=3 --symdebug:dwarf --symdebug:dwarf_version=3 
 
@@ -99,8 +99,8 @@ $C$DW$8	.dwtag  DW_TAG_variable, DW_AT_name("decay")
 	.dwattr $C$DW$8, DW_AT_decl_file("hello-pru.c")
 	.dwattr $C$DW$8, DW_AT_decl_line(0x49)
 	.dwattr $C$DW$8, DW_AT_decl_column(0x0b)
-;	optpru /tmp/03442S1WBjX /tmp/03442Y5rOpK 
-;	acpiapru -@/tmp/03442bjuCbw 
+;	optpru /tmp/02287aeNZUu /tmp/02287iOu4zP 
+;	acpiapru -@/tmp/02287a1VvJu 
 	.sect	".text:space"
 	.clink
 	.global	||space||
