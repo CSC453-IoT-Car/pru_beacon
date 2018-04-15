@@ -18,7 +18,14 @@ beacon power -> P9_7  (5V Line)
 
 beacon signal -> P9_30
 
-
+Beacon Diagram: (Connectors on opposite side of LEDs)
+```
+-------------------------
+| PWR GND SIG           |
+|                       |
+|                       |
+-------------------------
+```
 detector PWR -> P9_3  (3v3 Line! NOT 5V!!)
 
 detector GND -> P8_1
@@ -31,7 +38,7 @@ detector 2 -> P8_43
 
 detector 3 -> P8_45
 
-Detector Diagram:
+Detector Diagram: (Connectors on same side as detectors)
 ```
       --------------------------------      
       |                              |      
