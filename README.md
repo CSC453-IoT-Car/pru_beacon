@@ -1,6 +1,6 @@
 # Instructions
 1. Clone into /var/lib/cloud9
-2. Disable HDMI: edit /boot/uEnv.txt and uncomment the line under HDMI Disabled so it looks like this:
+2. Disable HDMI: edit /boot/uEnv.txt and uncomment the line under HDMI Disabled so it looks like this (DO NOT DISABLED THE ONE WITH eMMC!):
 ```
 ##Beaglebone Black: HDMI (Audio/Video) disabled:
 dtb=am335x-boneblack-emmc-overlay.dtb
