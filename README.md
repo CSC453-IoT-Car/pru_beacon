@@ -1,4 +1,14 @@
 # Instructions
+1. Clone into /var/lib/cloud9
+2. Disable HDMI: edit /boot/uEnv.txt and uncomment the line under HDMI Disabled so it looks like this:
+```
+##Beaglebone Black: HDMI (Audio/Video) disabled:
+dtb=am335x-boneblack-emmc-overlay.dtb
+```
+3. Clone car-server repo.
+4. Run setup_pru.sh in car-server
+5. Run beacon.js in this repo and call broadcastCode(x), passing a 5 bit number (0-31) to broadcast.
+<!--
 1. Grab https://rcn-ee.com/rootfs/bb.org/testing/2017-06-11/stretch-iot/bone-debian-stretch-iot-armhf-2017-06-11-4gb.img.xz
 2. Program a microSD card with that image using http://etcher.io
 3. Boot it on a BeagleBone
@@ -46,3 +56,4 @@ uboot_overlay_options:[enable_uboot_overlays=1]
 uboot_overlay_options:[uboot_overlay_pru=/lib/firmware/AM335X-PRU-RPROC-4-4-TI-00A0.dtbo]
 uboot_overlay_options:[enable_uboot_cape_universal=1]
 ```
+-->
