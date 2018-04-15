@@ -1,5 +1,5 @@
 # Instructions
-1. Run the following steps to setup PRUS with jadonk's setup script
+1. Run the following steps to setup PRUS with jadonk's setup script. (The config-pin steps may be optional here. I dont remember)
 ```sh
 cd /var/lib/cloud9
 git clone https://gist.github.com/jadonk/2ecf864e1b3f250bad82c0eae12b7b64
