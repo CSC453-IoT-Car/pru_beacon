@@ -1,5 +1,5 @@
 var fs = require('fs');
-var b = require("bonescript");
+//var b = require("bonescript");
 var pruFile = '/dev/rpmsg_pru30';
 
 module.exports = {
