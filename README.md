@@ -18,9 +18,10 @@ beacon power -> P9_7  (5V Line)
 
 beacon signal -> P9_30
 
-detector GND -> P8_1
 
 detector PWR -> P9_3  (3v3 Line! NOT 5V!!)
+
+detector GND -> P8_1
 
 detector 0 -> P8_39
 
@@ -29,6 +30,15 @@ detector 1 -> P8_41
 detector 2 -> P8_43
 
 detector 3 -> P8_45
+
+Detector Diagram:
+```
+      --------------------------------      
+      |                              |      
+FRONT |                              |
+      |               PWR GND 0 1 2 3|      
+      --------------------------------
+ ```
 <!--
 1. Grab https://rcn-ee.com/rootfs/bb.org/testing/2017-06-11/stretch-iot/bone-debian-stretch-iot-armhf-2017-06-11-4gb.img.xz
 2. Program a microSD card with that image using http://etcher.io
