@@ -1,14 +1,27 @@
 # Instructions
 1. Clone into /var/lib/cloud9
-2. Disable HDMI: edit /boot/uEnv.txt and uncomment the line under HDMI Disabled so it looks like this (DO NOT DISABLED THE ONE WITH eMMC!):
+2. Clone pru_detector int /var/lib/cloud9
+3. Disable HDMI: edit /boot/uEnv.txt and uncomment the line under HDMI Disabled so it looks like this (DO NOT DISABLED THE ONE WITH eMMC!):
 ```
 ##Beaglebone Black: HDMI (Audio/Video) disabled:
 dtb=am335x-boneblack-emmc-overlay.dtb
 ```
-3. Reboot
-4. Clone car-server repo.
-5. Run setup_pru.sh in car-server
-6. Run beacon.js in this repo and call broadcastCode(x), passing a 5 bit number (0-31) to broadcast.
+4. Reboot
+5. Clone car-server repo.
+6. Run setup_pru.sh in car-server
+7. Run beacon.js in this repo and call broadcastCode(x), passing a 5 bit number (0-31) to broadcast.
+
+# Wiring List
+beacon GND -> P9_1
+beacon power -> P9_7  (5V Line)
+beacon signal -> P9_30
+
+detector GND -> P8_1
+detector PWR -> P9_3  (3v3 Line! NOT 5V!!)
+detector 0 -> P8_39
+detector 1 -> P8_41
+detector 2 -> P8_43
+detector 3 -> P8_45
 <!--
 1. Grab https://rcn-ee.com/rootfs/bb.org/testing/2017-06-11/stretch-iot/bone-debian-stretch-iot-armhf-2017-06-11-4gb.img.xz
 2. Program a microSD card with that image using http://etcher.io
