@@ -8,5 +8,6 @@ gen/decay95.obj: /usr/lib/ti/pru-software-support-package/include/pru_types.h
 gen/decay95.obj: /usr/lib/ti/pru-software-support-package/include/pru_rpmsg.h
 gen/decay95.obj: /usr/lib/ti/pru-software-support-package/include/pru_virtqueue.h
 gen/decay95.obj: /usr/lib/ti/pru-software-support-package/include/pru_virtio_ring.h
-gen/decay95.obj: resource_table_empty.h
+gen/decay95.obj: resource_table_0.h
 gen/decay95.obj: /usr/share/ti/cgt-pru/include/stddef.h
+gen/decay95.obj: /usr/lib/ti/pru-software-support-package/include/pru_virtio_ids.h
