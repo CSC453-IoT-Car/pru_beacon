@@ -5,9 +5,10 @@
 ##Beaglebone Black: HDMI (Audio/Video) disabled:
 dtb=am335x-boneblack-emmc-overlay.dtb
 ```
-3. Clone car-server repo.
-4. Run setup_pru.sh in car-server
-5. Run beacon.js in this repo and call broadcastCode(x), passing a 5 bit number (0-31) to broadcast.
+3. Reboot
+4. Clone car-server repo.
+5. Run setup_pru.sh in car-server
+6. Run beacon.js in this repo and call broadcastCode(x), passing a 5 bit number (0-31) to broadcast.
 <!--
 1. Grab https://rcn-ee.com/rootfs/bb.org/testing/2017-06-11/stretch-iot/bone-debian-stretch-iot-armhf-2017-06-11-4gb.img.xz
 2. Program a microSD card with that image using http://etcher.io
