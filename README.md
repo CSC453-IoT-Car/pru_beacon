@@ -13,7 +13,7 @@ sudo make run
 
 You'll see USR0 blinking 5 times a second (toggles every 100ms). Now install our code:
 
-2. Clone into /var/lib/cloud9
+2. Clone pru_beacon into /var/lib/cloud9
 3. Clone pru_detector int /var/lib/cloud9
 4. Disable HDMI: edit /boot/uEnv.txt and uncomment the line under HDMI Disabled so it looks like this (DO NOT DISABLED THE ONE WITH eMMC!):
 ```
