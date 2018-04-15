@@ -1,15 +1,29 @@
 # Instructions
-1. Clone into /var/lib/cloud9
-2. Clone pru_detector int /var/lib/cloud9
-3. Disable HDMI: edit /boot/uEnv.txt and uncomment the line under HDMI Disabled so it looks like this (DO NOT DISABLED THE ONE WITH eMMC!):
+1. Run the following steps to setup PRUS with jadonk's setup script
+```sh
+cd /var/lib/cloud9
+git clone https://gist.github.com/jadonk/2ecf864e1b3f250bad82c0eae12b7b64
+cd 2ecf864e1b3f250bad82c0eae12b7b64
+make
+echo none > /sys/class/leds/beaglebone\:green\:usr0/trigger
+sudo config-pin overlay cape-universala
+sudo config-pin p9.30 pruout
+sudo make run
+```
+
+You'll see USR0 blinking 5 times a second (toggles every 100ms). Now install our code:
+
+2. Clone into /var/lib/cloud9
+3. Clone pru_detector int /var/lib/cloud9
+4. Disable HDMI: edit /boot/uEnv.txt and uncomment the line under HDMI Disabled so it looks like this (DO NOT DISABLED THE ONE WITH eMMC!):
 ```
 ##Beaglebone Black: HDMI (Audio/Video) disabled:
 dtb=am335x-boneblack-emmc-overlay.dtb
 ```
-4. Reboot
-5. Clone car-server repo.
-6. Run setup_pru.sh in car-server
-7. Run beacon.js in this repo and call broadcastCode(x), passing a 5 bit number (0-31) to broadcast.
+5. Reboot
+6. Clone car-server repo.
+7. Run setup_pru.sh in car-server
+8. Run beacon.js in this repo and call broadcastCode(x), passing a 5 bit number (0-31) to broadcast.
 
 # Wiring List
 beacon GND -> P9_1
@@ -47,11 +61,7 @@ FRONT |                              |
       --------------------------------
  ```
 <!--
-1. Grab https://rcn-ee.com/rootfs/bb.org/testing/2017-06-11/stretch-iot/bone-debian-stretch-iot-armhf-2017-06-11-4gb.img.xz
-2. Program a microSD card with that image using http://etcher.io
-3. Boot it on a BeagleBone
-4. Get connected to the Internet
-5. Run the following in the shell
+1. Run the following steps to setup PRUS
 ```sh
 cd /var/lib/cloud9
 git clone https://gist.github.com/jadonk/2ecf864e1b3f250bad82c0eae12b7b64
