@@ -34,11 +34,11 @@ beacon signal -> P9_30
 
 Beacon Diagram: (Connectors on opposite side of LEDs)
 ```
--------------------------
-|                       |
-|                       |
-|            SIG GND PWR|
--------------------------
+     -------------------------
+     |                       |
+FRONT|                       |
+     |            SIG GND PWR|
+     -------------------------
 ```
 detector PWR -> P9_3  (3v3 Line! NOT 5V!!)
 
